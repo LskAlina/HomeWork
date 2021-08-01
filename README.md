@@ -1,14 +1,14 @@
-#Hello I`m Alina
+# Hello I`m Alina
 
 [google](https://www.google.com.ua/)
 
-###Emphasis
+### Emphasis
 *This text will be italic*
 
-##Unordered
+## Unordered
 
-*item
-*item
- *item
+* item
+* item
+ * item
 
 
