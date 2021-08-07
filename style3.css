@@ -1,0 +1,14 @@
+body {
+    margin:  10px 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.month{
+    display: flex;
+    flex-direction: row;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
