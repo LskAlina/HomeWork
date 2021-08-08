@@ -1,0 +1,32 @@
+/* html, body  */
+:root {
+    font-size: 13px;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.wraper {
+    display: flex;
+    min-height: 100vh;
+    flex: 0 1 900px;
+    flex-wrap: wrap;
+    
+    /* min-width: 900px; */
+    /* margin: 0 auto; */
+    /* max-width: 900px; */
+
+    font-size: 13px;
+    line-height: 1.2; 
+}
+
+header{
+    flex: 0 0 270px;
+    min-height: 50vh;
+}
+
+main{
+    flex: 1 0 0;
+}
+
