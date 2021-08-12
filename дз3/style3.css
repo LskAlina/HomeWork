@@ -9,6 +9,7 @@ body{
     display: flex;
     justify-content: center;
     margin: 0;
+    min-width: 800px;
 }
 
 section {
@@ -136,6 +137,7 @@ li{
     height: 40px;
     padding: 20px 0;
     line-height: 1.5;
+    border-radius: 50%;
 }
 
 .date li:nth-child(n+32){
@@ -145,7 +147,7 @@ li{
 
 .date li:hover {
     background: #3C82F9;
-    border-radius: 50%;
+    transition: 0.5s ease-in-out 0s;
 }
 .categories{
     display: flex;
@@ -187,4 +189,6 @@ button+button {
 
 .categories button:hover{
     box-shadow: 0px 0px 10px white;
+    transition: all 1s ease-out;
 }
+

@@ -1,6 +1,10 @@
 /* html, body  */
 :root {
     font-size: 13px;
+    line-height: 1.2; 
+    font-family: Arial;
+
+
 }
 body{
     margin: 0;
@@ -12,21 +16,109 @@ body{
     min-height: 100vh;
     flex: 0 1 900px;
     flex-wrap: wrap;
+    font-size: 13px;
     
     /* min-width: 900px; */
     /* margin: 0 auto; */
     /* max-width: 900px; */
 
-    font-size: 13px;
-    line-height: 1.2; 
 }
 
-header{
-    flex: 0 0 270px;
-    min-height: 50vh;
+.main__data{
+    margin: 0;
+    line-height: 1.2142;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 8px 0;
+}
+.main__data li{
+    flex-basis: auto;
+    /* margin-bottom: 8px; */
+}
+.main__data li:nth-child(2n){
+    flex-basis: 70%;
+    margin-left: 0.3em;
 }
 
+.main__data li:nth-child(2n)::before{
+    content: "• ";
+
+    /* position: absolute; */
+
+}
 main{
     flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size: 1.3846rem;
+    line-height: 1.6667;
+    color: #000000;
+
+    margin: 0 0 8px;
 }
 
+ ul{
+    margin: 0  0 36px;
+    list-style: none;
+    padding: 0;
+}
+.goals ul li {
+    padding-left: 10px;
+    position: relative;
+}
+.goals ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+.aspirations {
+    padding-top: 32px;
+    padding-bottom: 39px;
+    padding-left: 80px;
+    flex: 0 0 auto;
+}
+
+.aspirations__title{
+    margin-bottom: 0;
+}
+.aspirations__goals{
+    font-size: 1.3846rem;
+    line-height: 1.6667;
+    color: #666;
+    font-weight: bold;
+
+    margin: 0;
+}
+
+.goals{
+    padding: 36px 45px 64px 80px;
+    background: #F9F9F9;
+    flex: 1 0 auto;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 0 0 270px;
+    /* min-height: 50vh; */
+    /* background-color: blueviolet; */
+    color: #FFFFFF;
+    
+    background-image: url(../IMAGE/male-picture.jpeg);
+    background-size: cover;
+    background-position : center;
+}
+.main__title{
+    font-size: 2.1428rem;
+    line-height: 1.2;
+    
+    color: #FFFFFF;
+}
+.maim__wraper{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    padding: 16px;
+}
