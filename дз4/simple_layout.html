@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            max-width: 100vw;
+            text-align: center;
+
+        }
+
+        header {
+            display: flex;
+            height: 100px;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text_center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .logo {
+            flex: 0 0 100px;
+            background-color: lightpink;
+        }
+
+        .menu {
+            flex: 1 0 auto;
+            background-color: lightseagreen;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            max-width: 100vw;
+        }
+
+
+        .wrapper_main {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-basis: 300px;
+        }
+
+        .news {
+            background-color: powderblue;
+            flex: 0 0 100px;
+
+        }
+
+        .list {
+            background-color: lightgreen;
+            flex: 1 1 auto;
+        }
+
+        .footer {
+            background-color: magenta;
+            flex-basis: 150px;
+        }
+
+        .nav {
+            background-color: lightsalmon;
+            min-width: calc(.35 * (100vw - 100px));
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo flex">LOGO</div>
+        <div class="menu flex">MENU</div>
+    </header>
+    <main>
+        <div class="wrapper_main ">
+            <div class="wrapper">
+                <div class="news text_center">NEWS FEED</div>
+                <div class="list text_center">LIST OF SOMETHING</div>
+            </div>
+            <div class="footer text_center">FOOTER</div>
+        </div>
+        <div class="nav text_center">NAVIGATION BAR</div>
+    </main>
+
+</body>
+
+</html>

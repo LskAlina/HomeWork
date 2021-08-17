@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    --width-vp: calc(100% / 5);
+}
+
+.block {
+    margin-bottom: 10px;
+}
+
+.block>div {
+    background: #00BCD4;
+    border: 1px solid #FFF;
+    height: 150px;
+    color: #FFF;
+    display: block;
+    width: 100%;
+}
+
+.inside {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+}
+
+/* ________________________________ */
+
+/* Mobile: min:320px, max: 768px */
+
+.first{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first .colored{
+    flex-basis: 50%;
+}
+
+.second{
+    display: flex;
+    flex-wrap: wrap;
+}
+.second .colored{
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+.third .colored{
+    width: 100%;
+}
+
+.fourth{
+    width: 100%;
+}
+
+.fifth .colored{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .third {
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    .third .colored:first-child{
+        flex-basis: 100%;
+    }
+    .third .colored{
+        flex: 1 0 0;
+    }
+
+    .fourth {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fourth .colored{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+    .fourth .colored:last-child{
+        flex: 1 0 0;
+    }
+
+    .fifth{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fifth .colored {
+        flex: 1 0 50%;
+    }
+
+}
+
+@media (min-width: 960px) {
+   
+
+    .third .colored.colored{
+        flex: 1 0 0;
+    }
+    .fourth {
+        flex-wrap: nowrap;
+    }
+
+    .fourth .colored.colored{
+        flex-basis: 35%;
+        flex-grow: 0;
+    }
+    .fourth .colored:nth-child(2){
+        flex: 1 0 0;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .third .colored:last-child {
+       flex-basis: 100%;
+    }
+
+    .fifth{
+        justify-content: center;
+    }
+    .fifth .colored{
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .first{
+        flex-wrap: nowrap;
+    }
+    .first .colored{
+        flex: 1 0 0;
+    }
+    .third .colored.colored{
+        flex: 0 0 25%;
+    }
+    .fourth .colored.colored{
+        flex-basis: 25%;
+        flex-grow: 0;
+    }
+    .fourth .colored:last-child{
+        flex-basis: 50%;
+    }
+    .fifth .colored{
+        flex: 1 0 0;
+    }
+}
